@@ -1,0 +1,10 @@
+^C:\USERS\MATRIX\DESKTOP\-NLP-\BUILD\CMAKEFILES\BE7AF0E228881B07AF8457FFC3605ED5\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/MATRIX/Desktop/-NLP- -BC:/Users/MATRIX/Desktop/-NLP-/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/MATRIX/Desktop/-NLP-/build/llm_console.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

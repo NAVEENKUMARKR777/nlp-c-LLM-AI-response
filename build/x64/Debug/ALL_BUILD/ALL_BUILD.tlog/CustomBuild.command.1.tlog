@@ -1,0 +1,10 @@
+^C:\USERS\MATRIX\DESKTOP\-NLP-\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/MATRIX/Desktop/-NLP- -BC:/Users/MATRIX/Desktop/-NLP-/build --check-stamp-file C:/Users/MATRIX/Desktop/-NLP-/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
