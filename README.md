@@ -31,7 +31,7 @@ This C++ console application demonstrates integration with Hugging face API to p
    ```
 5. Run the application:
    ```bash
-   cd c:/Users/MATRIX/Desktop/-NLP-/build/Debug 
+   cd ./build/Debug 
    .\llm_console.exe
    
    ```
